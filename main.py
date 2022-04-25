@@ -1,6 +1,8 @@
 # Задача: Требуется найти самую длинную непрерывную цепочку нулей в последовательности нулей и единиц.
 
 def func(inp):
+    if not isinstance(inp, str):
+        return -1
     c = 0
     max_c = 0
     for i in range(len(inp)):
